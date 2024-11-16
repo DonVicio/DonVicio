@@ -1,5 +1,5 @@
 <svg id="pixelMe" class="" width="2000" height="1000" viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <image href="bgMe.jpg" width="2000" height="1000" />
+  <rect x="0" y="0" width="2000" height="1000" fill="#CCCCCC"/>
   <g id="pixels">
     <g class="pixelBlock"><rect class="pixel" x="1480" y="80" width="40" height="40" fill="#CACACA"/></g>
     <g class="pixelBlock"><rect class="pixel" x="1440" y="120" width="40" height="40" fill="#BFBFBF"/></g>
@@ -306,58 +306,4 @@
     <path d="M511.497 445.2C443.497 445.2 395.497 399.6 395.497 332.8V332C395.497 269.2 440.697 218.8 504.697 218.8C579.097 218.8 613.497 273.6 613.497 337.2C613.497 342 613.497 347.6 613.097 352.8H468.297C474.297 376.8 491.097 388.4 515.097 388.4C533.897 388.4 547.497 382 563.097 366.4L605.097 401.2C584.297 428 554.697 445.2 511.497 445.2ZM467.097 314H542.697C539.897 290 525.497 274.8 504.697 274.8C484.297 274.8 471.497 290 467.097 314Z"/>
     <path d="M120 440V160H197.6V264.8H297.2V160H374.8V440H297.2V333.6H197.6V440H120Z"/>
   </g>
-  <g id="pixelToggle">
-    <rect x="120" y="800" width="260" height="80" fill="black"/>
-    <g class="button-label" fill="#41FFC9">
-      <path d="M228.475 851.528V822H236V851.528H228.475Z"/>
-      <path d="M215.04 852.054C208.271 852.054 203.494 847.443 203.494 840.688V840.607C203.494 834.256 207.993 829.16 214.363 829.16C221.769 829.16 225.193 834.701 225.193 841.133C225.193 841.618 225.193 842.184 225.153 842.71H210.74C211.337 845.137 213.009 846.31 215.398 846.31C217.269 846.31 218.623 845.663 220.176 844.085L224.356 847.605C222.286 850.315 219.34 852.054 215.04 852.054ZM210.62 838.787H218.145C217.867 836.36 216.433 834.823 214.363 834.823C212.332 834.823 211.058 836.36 210.62 838.787Z"/>
-      <path d="M189.053 829.645L192.238 835.106L195.463 829.645H203.426L196.339 840.445L203.585 851.528H195.463L192.118 845.825L188.734 851.528H180.771L188.017 840.526L180.93 829.645H189.053Z"/>
-      <path d="M170.747 827.663V822H178.59V827.663H170.747ZM170.906 851.528V829.645H178.431V851.528H170.906Z"/>
-      <path d="M144 858V829.645H151.565V832.557C153.038 830.737 154.869 829.16 158.094 829.16C163.191 829.16 167.65 833.488 167.65 840.485V840.566C167.65 847.685 163.23 852.013 158.134 852.013C154.869 852.013 152.998 850.517 151.565 848.858V858H144ZM155.825 845.582C158.214 845.582 160.244 843.56 160.244 840.607V840.526C160.244 837.613 158.214 835.551 155.825 835.551C153.356 835.551 151.405 837.613 151.405 840.526V840.607C151.405 843.519 153.356 845.582 155.825 845.582Z"/>
-    </g>
-    <g class="toggle">
-      <rect x="276" y="820" width="80" height="40" fill="#555555"/>
-      <rect class="toggle-handler" onclick="changeClass()" x="320" y="824" width="32" height="32" fill="#41FFC9"/>
-    </g>
-  </g>
-
-  <style>
-    #pixelMe{
-      width:100%;
-      height: auto;
-    }
-    .pixelBlock:hover rect{
-      cursor: crosshair;
-      fill: transparent;
-      transition: all 0.2s ease-in-out;
-    }
-    .pixelBlock rect{
-      transition: all 0.5s ease-in-out 1s;
-    }
-    #pixelMe #pixels{
-      transition: all 0.3s ease-in-out;
-    }
-    #pixelMe.pixelOff #pixels{
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-    }
-    rect.toggle-handler{
-      transition: all 0.2s ease-in-out;
-    }
-    rect.toggle-handler:hover{
-      cursor: pointer;
-    }
-    #pixelMe.pixelOff rect.toggle-handler{
-      x: 280;
-      fill: #B0B0B0;
-    }
-  </style>
-
-  <script>
-  function changeClass(){
-    var element = document.getElementById("pixelMe");
-    element.classList.toggle("pixelOff");
-  }
-  </script>
-
 </svg>
