@@ -1,5 +1,5 @@
 <svg id="pixelMe" class="" width="2000" height="1000" viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <rect x="0" y="0" width="2000" height="1000" fill="#CCCCCC"/>
+  <rect x="0" y="0" width="2000" height="1000" fill="#CCCCCC" rx="40"/>
   <g id="pixels">
     <g class="pixelBlock"><rect class="pixel" x="1480" y="80" width="40" height="40" fill="#CACACA"/></g>
     <g class="pixelBlock"><rect class="pixel" x="1440" y="120" width="40" height="40" fill="#BFBFBF"/></g>
