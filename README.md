@@ -1,3 +1,3 @@
 <div align="center">
-    <img src="img/pixelMe.svg.svg" />
+    <img src="img/pixelMe.svg" />
 </div>
